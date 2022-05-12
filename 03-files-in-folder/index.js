@@ -27,7 +27,7 @@ const poi = (way) => {
                 throw error;
               } else {
                 const size = stat.size/1000;
-                console.log(`${name} - ${extname} - ${size}kb`);
+                console.log(`${name} - ${extname.slice(extname.indexOf('.')+1)} - ${size}kb`);
               }
             });
           }
